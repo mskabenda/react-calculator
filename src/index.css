@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.calculator{
+  border: 30px solid lightblue;
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.display{
+background-color: black;
+height: 21vh;
+      color: white;
+      text-align: right;
+      font-size: 250px;
+
+}
+
+
+.operators{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    border: black 1pc;
+    padding-bottom: 10px;
+}
+
+.operators button{
+  height: 15vh;
+  background-color: lightgray;
+  color: black;
+  font-size: 75px;
+}
+.digits{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+  border: black 1pc;
+
+}
+
+.digits button{
+  height: 15vh;
+  background-color: white;
+  color: black;
+  font-size: 75px;
+}
+
+.equal{
+  background-color: orange;
+  color: white;
+  grid-template-columns: (4)
+}
+
+
+.equal {
+    background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+    color: white;
+    font-size: 75px;
+    text-align: center;
 }
